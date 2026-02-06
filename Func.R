@@ -261,7 +261,7 @@ hc_basic <- function(x, title) {
       ),
       x = 20
     ) |> 
-    hc_add_series(type = "line", name = "NAV", data = x.xts2) |> 
+    hc_add_series(type = "line", name = title, data = x) |> 
     hc_tooltip(
       shape = "rect",
       headerShape = "callout",
