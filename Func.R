@@ -226,7 +226,10 @@ hc_stock_lp <- function(x, title) {
     hc_add_theme(hc_theme_darkunica())
 }
 
-hc_basic <- function(x, title) {
+hc_basic <- function(x, 
+                     title,
+                     tooltip_nm,
+                     rg_num = 0) {
   
   if (!is.xts(x)) stop("x must be an xts object.")
   
@@ -241,7 +244,7 @@ hc_basic <- function(x, title) {
     type = "stock"
   ) |> 
     hc_rangeSelector(
-      selected = 0,
+      selected = rg_num,
       dropdown = "always",
       buttonTheme = list(
         r = 3,
@@ -261,7 +264,7 @@ hc_basic <- function(x, title) {
       ),
       x = 20
     ) |> 
-    hc_add_series(type = "line", name = title, data = x) |> 
+    hc_add_series(type = "line", name = tooltip_nm, data = x) |> 
     hc_tooltip(
       shape = "rect",
       headerShape = "callout",
