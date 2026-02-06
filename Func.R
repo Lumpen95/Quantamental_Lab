@@ -225,3 +225,75 @@ hc_stock_lp <- function(x, title) {
     ) |> 
     hc_add_theme(hc_theme_darkunica())
 }
+
+hc_basic <- function(x, title) {
+  
+  if (!is.xts(x)) stop("x must be an xts object.")
+  
+  # 전역 변수 설정
+  hc_lang <- getOption("highcharter.lang")
+  hc_lang$thousandsSep <- ","
+  options(
+    highcharter.lang = hc_lang
+  )
+  
+  highchart(
+    type = "stock"
+  ) |> 
+    hc_rangeSelector(
+      selected = 0,
+      dropdown = "always",
+      buttonTheme = list(
+        r = 3,
+        states = list(
+          hover = list(
+            fill = "#4a4a4a", # 배경색
+            style = list(color = "#FFFFFF") # 글자색
+          ),
+          select = list(
+            fill = "#E0E0E0",
+            style = list(
+              color = "#2b2b2b",
+              fontWeight = "bold"
+            )
+          )
+        )
+      ),
+      x = 20
+    ) |> 
+    hc_add_series(type = "line", name = "NAV", data = x.xts2) |> 
+    hc_tooltip(
+      shape = "rect",
+      headerShape = "callout",
+      shadow = F,
+      fixed = TRUE,
+      borderWidth = 0.1,
+      valueDecimals = 2,
+      style = list(
+        fontSize = "13px"
+      )
+    ) |> 
+    hc_title(text = title,
+             style = list(fontSize = "25px", fontWeight = "bold"),
+             align = "left", x = 20, y = 30
+    ) |> 
+    hc_legend(
+      enabled = TRUE,
+      layout = "vertical",
+      align = "left",
+      verticalAlign = "top",
+      floating = TRUE,
+      x = 10,
+      y = 10,
+      backgroundColor = "rgba(0,0,0,0)",
+      itemStyle = list(
+        color = "#E0E0E0",
+        fontSize = "15px"
+      ),
+      symbolHeight = 10,
+      symbolWidth = 10,
+      symbolRadius = 2
+    ) |> 
+    hc_add_theme(hc_theme_darkunica())
+  
+}
