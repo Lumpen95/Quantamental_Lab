@@ -228,6 +228,7 @@ hc_stock_lp <- function(x, title) {
 
 hc_basic <- function(x, 
                      title,
+                     sub_title = NULL,
                      tooltip_nm,
                      rg_num = 0) {
   
@@ -279,6 +280,11 @@ hc_basic <- function(x,
     hc_title(text = title,
              style = list(fontSize = "25px", fontWeight = "bold"),
              align = "left", x = 20, y = 30
+    ) |> 
+    hc_subtitle(text = sub_title,
+                style = list(fontSize = "18px"),
+                align = "left",
+                x = 20, y = 55
     ) |> 
     hc_legend(
       enabled = TRUE,
