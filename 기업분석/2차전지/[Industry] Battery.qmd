@@ -1,0 +1,484 @@
+---
+title: "Battery"
+author: "lumpen95"
+format: 
+  html:
+    toc: true
+    theme: slate
+    css: style.css
+editor: visual
+---
+
+# 개요
+
+KOSPI 강세장 속에서 상대적으로 소외받던 2차전지 섹터가 CES 2026 이후 로봇 산업 확대라는 새로운 테마를 중심으로 재조명되고 있다. 전기차 수요 둔화(캐즘)로 투자 매력이 약화되었던 2차전지는 로봇 산업에서의 에너지 저장 및 구동원으로서의 필수성에 힘입어 구조적 수요 변화의 가능성이 제기되고 있다.
+
+본 리포트에서는 이러한 환경 변화 속에서 2차전지 섹터의 현황과 중기적 전망을 다루고 **TIGER 2차전지TOP10 ETF**를 대상으로 벤치마크 지수 대비 성과 및 위험 특성을 정량적으로 평가하고자 한다.
+
+# 본론
+
+## 1. 섹터 분석
+
+### 1.1 전고체 배터리
+
+CES에서 공개된 Atlas의 배터리 수명은 4시간 정도로 고강도 업무의 경우 2시간으로 줄어든다. 휴머노이드 로봇의 타깃이 고강도 노동이 필요한 작업장인 만큼 그만큼 고용량 에너지밀도를 가진 배터리가 필요하다.
+
+작고 강력한 배터리가 필요한 만큼 중국의 주력인 LFP(리튬인산철) 대비 한국의 NCM(니켈코발트망간) 및 4680 원통형 배터리가 더 적합하며 이로인해 테슬라 및 중국 로봇 업체들과의 커넥션이 이어지고 있다.
+
+로봇 배터리의 최종 정착지는 **전고체 배터리**다. 액체 상태인 전해질을 고체로 바꾼 것으로 이로 인해 분리막의 역할을 간소화시켜 액체 대비 안정성이 높아지게 된다. 전기차 및 로봇에 탑재될 전고체 배터리는 산화물계 대비 용량이 큰 황화물계이다. 전고체 배터리의 경우 기존 전해액 자리에 고체 가루를 넣는 방식으로 여기서 핵심은 고체 가루를 빈 공간을 최소화하며 넣어야한다. 여기서 사용되는 기술이 메모리 반도체에서 사용되는 '정밀적층코팅' 기술로 삼성 계열사인 삼성SDI가 유리한 고지에 있다고 볼 수 있다.
+
+전고체 배터리의 치명적인 약점은 높은 가격에 있다. 현재 NCM에 사용되는 리튬보다 비싼 황화리튬을 사용해야 하며 그 외 부가적인 원가 상승 요인들이 존재한다. 그럼에도 불구하고 극도의 에너지 효율이 필요한 로봇이 주목을 받으면서 한동안 시장에서 소외 받던 전고체 배터리의 수요처가 생긴 것이다.
+
+물론 초기에는 가격 경쟁력이 높은 LFP, NCM 배터리가 주로 탑재되겠지만 2030년 이후에는 반고체 배터리를 거쳐 전고체 배터리의 비중이 높아질 것으로 보인다.
+
+-   전고체 배터리 양산 목표 시점
+    -   삼성SDI - 2027년 하반기(황화물계)
+    -   LG에너지솔루션 - 2028년(고분자계), 2030년(황화물계)
+
+### 1.2 중국 '전기차용 전고체 배터리'
+
+중국 자동차 표준화 국가기술위원회는 최근 '전기차용 전고체 배터리' 표준에 대한 초안을 발표했다. 배터리 분류를 확립하고 구체적인 로드맵이 제시되었다. 반고체 배터리 상업화를 기반으로 향후 열리는 전고체 배터리 시장을 지배하겠다는 계획으로 예상된다. 중국 반고체/전고체 배터리 핵심 기업으로는 BYD, CATL 등이 있다.
+
+전고체 배터리는 여전히 현재 업계 수준으로 보았을 때 다소 이르며 휴머노이드 로봇에 최적이라고 평가 받는 하이니켈 및 46원통형 배터리에 당분간 수요가 집중될 것으로 보인다.
+
+### 1.3 밸류 체인
+
+#### 1.3.1 휴머노이드 배터리 밸류체인
+
++--------+-------------------+-------------------+
+|        | 현대차 - 아틀라스 | 테슬라 - 옵티머스 |
++========+===================+===================+
+| 셀     | 삼성SDI           | LG에너지솔루션    |
++--------+-------------------+-------------------+
+| 양극재 | 에코프로비엠      | 엘앤에프          |
++--------+-------------------+-------------------+
+| 전해액 | 솔브레인          | 엔켐              |
++--------+-------------------+-------------------+
+| 분리막 | 더블유씨피        | 도레이첨단소재    |
++--------+-------------------+-------------------+
+
+#### 1.3.2 전고체 배터리 밸류체인
+
+|  |  |  |
+|-------------------|-----------------------|------------------------------|
+| 배터리셀 | 삼성SDI |  |
+|  | LG에너지솔루션 |  |
+|  | 포스코퓨처엠 |  |
+| 소재 | **이수스페셜티케미컬** | **황화리튬 생산(연 40톤)** |
+|  | 한농화성 | 고분자 전해질 개발 중 |
+|  | 레이크머티리얼즈 | 자회사(레이크테크놀로지) 황화리튬 생산 공정 기술 보유 |
+|  | 롯데에너지머티리얼즈 | 황화물계 고체 전해질 개발 중 |
+| 장비 | 씨아이에스 | 전고체 전지용 드라이코터 개발 중 |
+|  | 엠플러스 | 전고체 전지용 프레스 장비 개발 중 |
+
+#### 1.3.3 이차전지 밸류체인
+
++--------------+----------------------+
+| 셀           | - LG에너지솔루션       |
+|              | - 삼성SDI              |
+|              | - SK이노베이션         |
++--------------+----------------------+
+| 양극재       | - 에코프로비엠         |
+|              | - 포스코퓨처엠         |
+|              | - 엘앤에프             |
+|              | - LG화확               |
++--------------+----------------------+
+| 전해질       | - 엔캠                 |
+|              | - 후성                 |
++--------------+----------------------+
+|              | - 솔브레인             |
+| 분리막       | - SK아이이테크놀로지   |
+|              | - 더블유씨피           |
++--------------+----------------------+
+| 동박(전지박) | - SKC                  |
+|              | - 롯데에너지머티리얼즈 |
+|              | - 솔루스첨단소재       |
++--------------+----------------------+
+| 전구체       | - 에코프로머티         |
++--------------+----------------------+
+| 음극재       | - 대주전자재료         |
++--------------+----------------------+
+
+## 2. 섹터 대표 ETF 분석
+
+### 2.1 대표 ETF 개요
+
+#### 2.1.1 TIGER 이차전지TOP10 ETF\[364980\]
+
+-   기초지수: KRX 2차전지 TOP10 지수
+-   상장일: 2020.10.07
+-   AUM: 5,936억원(2026.02.06)
+-   기간: 2021.01.01 \~ 2026.02.05(약 5년)
+-   구성종목
+
+| 종목명         | 비중   |
+|----------------|--------|
+| POSCO홀딩스    | 24.19% |
+| LG에너지솔루션 | 22.47% |
+| SK이노베이션   | 19.09% |
+| 삼성SDI        | 10.07% |
+| 에코프로       | 7.98%  |
+| LG화학         | 5.93%  |
+| 에코프로비엠   | 4.63%  |
+| 포스코퓨처엠   | 3.42%  |
+| SKC            | 1.05%  |
+| 에코프로머티   | 0.82%  |
+
+::: {.style style="margin-bottom:20px"}
+:::
+
+```{r}
+#| label: setup
+#| include: false
+
+knitr::opts_chunk$set(
+  echo = F, 
+  message = F, 
+  warning = F,
+  fig.height = 7,
+  eval = T
+)
+```
+
+```{r}
+#| label: load_package_data
+
+library(tidyverse)
+library(highcharter)
+library(quantmod)
+
+# github 공통 주소
+addr <- "https://raw.githubusercontent.com/Lumpen95/Quantamental_Lab/main/"
+# github 함수 호출
+source(paste0(addr, "Func.R"))
+
+x <- read_csv(paste0(addr, "기업분석/2차전지/TIGER2차전지TOP10.csv"))
+
+x.xts <- xts(
+  x = x |> 
+    select(open, high, low, close, volume, benchmark_close), 
+  order.by = x$index
+  )
+
+x.xts2 <- x |> 
+  select(nav_total, ret) |> 
+  mutate(
+    ret = ret/100,
+    flow = nav_total - (lag(nav_total, 1) * (1 + ret)),
+    flow_cum20 = rollsum(flow, 20, fill = NA, align = "right")
+  ) |> 
+  select(flow, flow_cum20) |> 
+  as.xts(order.by = x$index)
+```
+
+```{r}
+#| label: ETF_CHART
+
+hc_stock_basic(x.xts, "TIGER 2차전지TOP10(364980)")
+```
+
+::: {.style style="margin-bottom:20px"}
+:::
+
+```{r}
+#| label: ETF_NAV_FLOW
+
+highchart(
+  type = "stock"
+) |> 
+  hc_rangeSelector(
+    selected = 0,
+    dropdown = "always",
+    buttonTheme = list(
+      r = 3,
+      states = list(
+        hover = list(
+          fill = "#4a4a4a", # 배경색
+          style = list(color = "#FFFFFF") # 글자색
+        ),
+        select = list(
+          fill = "#E0E0E0",
+          style = list(
+            color = "#2b2b2b",
+            fontWeight = "bold"
+          )
+        )
+      )
+    ),
+    x = 20
+  ) |> 
+  hc_add_series(type = "column", name = "NAV Net flow", data = x.xts2$flow) |> 
+  hc_add_series(type = "line", name = "누적 20일", data = x.xts2$flow_cum20, yAxis = 1) |> 
+  hc_plotOptions(
+    column = list(
+      color = "#f15c80",
+      negativeColor = "#7cb5ec"
+    )
+  ) |> 
+  hc_yAxis_multiples(
+    list(
+      height = "48%"
+    ),
+    list(
+      height = "50%",
+      top = "52%",
+      name = "NAV cum20"
+    )
+  ) |> 
+  hc_tooltip(
+    shape = "rect",
+    headerShape = "callout",
+    shadow = F,
+    fixed = TRUE,
+    borderWidth = 0.1,
+    valueDecimals = 2,
+    style = list(
+      fontSize = "13px"
+    )
+  ) |> 
+  hc_title(text = "NAV Flow",
+           style = list(fontSize = "25px", fontWeight = "bold"),
+           align = "left", x = 20, y = 30
+  ) |> 
+  hc_legend(
+    enabled = TRUE,
+    layout = "vertical",
+    align = "left",
+    verticalAlign = "top",
+    floating = TRUE,
+    x = 10,
+    y = 10,
+    backgroundColor = "rgba(0,0,0,0)",
+    itemStyle = list(
+      color = "#E0E0E0",
+      fontSize = "15px"
+    ),
+    symbolHeight = 10,
+    symbolWidth = 10,
+    symbolRadius = 2
+  ) |> 
+  hc_add_theme(hc_theme_darkunica())
+```
+
+### 2.2 위험 성과 평가
+
+#### 2.2.1 Tracking Error
+
+주간 수익률 기준 벤치마크 대비 초과 수익의 변동성을 측정한다. 단기 노이즈를 완화하기 위해 최근 6개월 rolling Tracking Error를 산출한다.
+
+```{r}
+#| label: TRACKING_ERROR
+#| fig-height: 6
+
+x.xts.weekly.etf <- weeklyReturn(x.xts$close, type = "log")
+x.xts.weekly.bm <- weeklyReturn(x.xts$benchmark_close, type = "log")
+
+excess.ret <- x.xts.weekly.etf - x.xts.weekly.bm
+
+te <- zoo::rollapply(
+  excess.ret,
+  width = 26,
+  FUN = sd,
+  align = "right",
+  fill = NA
+) * sqrt(52)
+
+highchart(
+  type = "stock"
+) |> 
+  hc_rangeSelector(
+    selected = 5,
+    dropdown = "always",
+    buttonTheme = list(
+      r = 3,
+      states = list(
+        hover = list(
+          fill = "#4a4a4a", # 배경색
+          style = list(color = "#FFFFFF") # 글자색
+        ),
+        select = list(
+          fill = "#E0E0E0",
+          style = list(
+            color = "#2b2b2b",
+            fontWeight = "bold"
+          )
+        )
+      )
+    ),
+    x = 20
+  ) |> 
+  hc_add_series(type = "line", name = "Te", data = te) |> 
+  hc_tooltip(
+    shape = "rect",
+    headerShape = "callout",
+    shadow = FALSE,
+    fixed = TRUE,
+    borderWidth = 0.1,
+    useHTML = TRUE,
+    pointFormatter = JS("
+      function () {
+        return `
+          <div style='font-size:13px'>
+            <span style='color:${this.color}'>●</span>
+            <b>
+              ${this.series.name}
+            </b><br/>
+            <span style='opacity:0.8'>
+              ${Highcharts.dateFormat('%Y-%m-%d', this.x)}
+            </span><br/>
+            <b style='font-size:15px'>
+              ${Highcharts.numberFormat(this.y * 100, 2)}%
+            </b>
+          </div>
+        `;
+      }"
+   )
+  ) |> 
+  hc_yAxis(
+    labels = list(
+      formatter = JS(
+        "function () {
+          return Highcharts.numberFormat(this.value * 100, 2) + '%';
+        }"
+      )
+    )
+  ) |> 
+  hc_title(text = "Tracking Error - Weekly Return",
+           style = list(fontSize = "25px", fontWeight = "bold"),
+           align = "left", x = 20, y = 30
+  ) |> 
+  hc_subtitle(text = "6 months rolling",
+              style = list(fontSize = "18px"),
+              align = "left",
+              x = 20, y = 55
+  ) |> 
+  hc_legend(
+    enabled = TRUE,
+    layout = "vertical",
+    align = "left",
+    verticalAlign = "top",
+    floating = TRUE,
+    x = 10,
+    y = 10,
+    backgroundColor = "rgba(0,0,0,0)",
+    itemStyle = list(
+      color = "#E0E0E0",
+      fontSize = "15px"
+    ),
+    symbolHeight = 10,
+    symbolWidth = 10,
+    symbolRadius = 2
+  ) |> 
+  hc_add_theme(hc_theme_darkunica())
+```
+
+::: {style="margin-bottom: 20px;"}
+:::
+
+-   Tracking Error(Te)는 2025년말 과거 대비 크게 상승하였다.
+
+-   과거 구간과 비교했을 때 추세 안정성은 단기적으로 크게 저하된 상태로 Te 안정을 위한 재점검이 필요한 시기다.
+
+#### 2.2.2 Information Ratio
+
+```{r}
+#| label: INFORMATION_RATIO
+#| fig-height: 6
+
+roll.excess.ret <- zoo::rollapply(
+  excess.ret,
+  width = 26,
+  FUN = mean,
+  align = "right",
+  fill = NA
+) * 52
+
+ir <- roll.excess.ret / te
+
+highchart(
+  type = "stock"
+) |> 
+  hc_rangeSelector(
+    selected = 2,
+    dropdown = "always",
+    buttonTheme = list(
+      r = 3,
+      states = list(
+        hover = list(
+          fill = "#4a4a4a", # 배경색
+          style = list(color = "#FFFFFF") # 글자색
+        ),
+        select = list(
+          fill = "#E0E0E0",
+          style = list(
+            color = "#2b2b2b",
+            fontWeight = "bold"
+          )
+        )
+      )
+    ),
+    x = 20
+  ) |> 
+  hc_add_series(type = "line", name = "ir", data = ir) |> 
+  hc_tooltip(
+    shape = "rect",
+    headerShape = "callout",
+    shadow = F,
+    fixed = TRUE,
+    borderWidth = 0.1,
+    valueDecimals = 2,
+    style = list(
+      fontSize = "13px"
+    )
+  ) |> 
+  hc_yAxis(
+    plotLines = list(
+      list(
+        value = 0.5,
+        color = "#FF6B6B",
+        width = 2,
+        dashStyle = "Dash",
+        label = list(
+          text = "IR = 0.5 (의미 있는 상대성과)",
+          align = "right",
+          style = list(color = "#FF6B6B", fontWeight = "bold")
+        )
+      )
+    )
+  ) |> 
+  hc_title(text = "Information Ratio",
+           style = list(fontSize = "25px", fontWeight = "bold"),
+           align = "left", x = 20, y = 30
+  ) |> 
+  hc_subtitle(text = "6 months rolling",
+              style = list(fontSize = "18px"),
+              align = "left",
+              x = 20, y = 55
+  ) |> 
+  hc_legend(
+    enabled = TRUE,
+    layout = "vertical",
+    align = "left",
+    verticalAlign = "top",
+    floating = TRUE,
+    x = 10,
+    y = 10,
+    backgroundColor = "rgba(0,0,0,0)",
+    itemStyle = list(
+      color = "#E0E0E0",
+      fontSize = "15px"
+    ),
+    symbolHeight = 10,
+    symbolWidth = 10,
+    symbolRadius = 2
+  ) |> 
+  hc_add_theme(hc_theme_darkunica())
+```
+
+# Reference
+
+-   [휴머노이드 로봇용 배터리 - 고잉투더문](https://blog.naver.com/going_tothe_moon/224171392816?trackingCode=blog_bloghome_searchlist)
+-   [휴머노이드 로봇, 2040년엔 5300만대…전고체 배터리 성장 이끈다](https://n.news.naver.com/mnews/article/277/0005716589?sid=101)
+-   로봇향 전고체 기대 한국 vs 반고체 상업화 중국 - 삼성증권 장정훈
+-   [로봇시대에는 어떤 배터리가 어울릴까? - 메르](https://blog.naver.com/ranto28/224155985859?trackingCode=blog_bloghome_searchlist)
+-   [현대차發 아틀라스 쇼크…로보틱스, 산업 생태계 바꾼다](https://n.news.naver.com/mnews/article/629/0000469225?sid=101)
