@@ -9,9 +9,6 @@ hc_stock_basic <- function(x, title, sub_title) {
     highcharter.lang = hc_lang
   )
   
-  updated.t <- attr(x, "updated")
-  sub_title <- format(updated.t, "%Y-%m-%d %H:%M")
-  
   x <- x |> na.omit()
   
   highchart(
