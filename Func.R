@@ -1,4 +1,4 @@
-hc_stock_basic <- function(x, title) {
+hc_stock_basic <- function(x, title, sub_title) {
   
   if (!is.xts(x)) stop("x must be an xts object.")
   
